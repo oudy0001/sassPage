@@ -1,0 +1,19 @@
+.wrapper {
+  height: 100%;
+  overflow: scroll; }
+
+.row:nth-child(2n+1) {
+  padding-bottom: 100px; }
+
+footer {
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-indent: 7%;
+  width: 100%;
+  text-align: left;
+  color: #444;
+  background: rgba(200, 200, 200, 0.9); }
+
+/*# sourceMappingURL=sticky-footer.css.map */

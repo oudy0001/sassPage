@@ -1,0 +1,104 @@
+
+$from: green;
+$to: blue;
+
+@mixin linear-gradient($from, $to) {
+	background-color: $to;
+	background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+	background-image: -webkit-linear-gradient(top, $from, $to);
+	background-image: -moz-linear-gradient(top, $from, $to);
+	background-image: -o-linear-gradient(top, $from, $to);
+	background-image: linear-gradient(to bottom, $from, $to);
+}
+
+@mixin greyscale($greyPercent){
+      -webkit-filter: grayscale($greyPercent);
+     -moz-filter: grayscale($greyPercent);
+      -ms-filter: grayscale($greyPercent);
+          filter: grayscale($greyPercent);
+    
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin columnWidthCalculator($containerWidth, $colNum, $padding, $margin){
+    width: ($containerWidth - (2 * $padding + 2 * $margin) * $colNum) / $colNum;
+    padding: $padding;
+    margin: $margin;
+    //overflow: scroll;
+}
+@mixin rotate($degree, $animateTime){
+    transition: all $animateTime linear;
+    -ms-transform: rotate($degree);
+    -webkit-transform: rotate($degree);
+    -moz-transform: rotate($degree);
+    transform: rotate($degree);
+}
+@mixin flip($animateTime){
+    transition: all $animateTime linear;
+            -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+/*
+$from: green;
+$to: blue;
+
+@mixin linear-gradient($from, $to) {
+	background-color: $to;
+	background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+	background-image: -webkit-linear-gradient(top, $from, $to);
+	background-image: -moz-linear-gradient(top, $from, $to);
+	background-image: -o-linear-gradient(top, $from, $to);
+	background-image: linear-gradient(to bottom, $from, $to);
+}
+$backgroundImg: url(../img/bg.jpg);
+html{
+    background: $backgroundImg}
+
+@mixin greyscale($greyPercent){
+      -webkit-filter: grayscale($greyPercent);
+     -moz-filter: grayscale($greyPercent);
+      -ms-filter: grayscale($greyPercent);
+          filter: grayscale($greyPercent);
+    
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin columnWidthCalculator($containerWidth, $colNum, $padding, $margin){
+    width: ($containerWidth - (2 * $padding + 2 * $margin) * $colNum) / $colNum;
+    padding: $padding;
+    margin: $margin;
+    //overflow: scroll;
+}
+@mixin rotate($degree, $animateTime){
+    transition: all $animateTime linear;
+    -ms-transform: rotate($degree);
+    -webkit-transform: rotate($degree);
+    -moz-transform: rotate($degree);
+    transform: rotate($degree);
+}
+@mixin flip($animateTime){
+    transition: all $animateTime linear;
+            -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+*/
