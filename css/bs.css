@@ -1,0 +1,32 @@
+
+* {
+	margin: 0;
+}
+html, body {
+    margin: 0 auto;
+	height: 100%;
+    background: red;
+}
+.wrapper {
+    margin: 0 auto;
+  min-height: 500px;
+    width: 900px;
+  /* equal to footer height */
+    border: 2px solid blue;
+}
+
+footer, .wrapper:after {
+  /* .push must be the same height as footer */
+	height: 142px; 
+}
+footer {
+  background: orange;
+}
+
+.bl{
+    bottom: 0;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background: rgba(100,100,100,1);
+}

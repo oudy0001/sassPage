@@ -1,23 +1,32 @@
 $footerHeight: 100px;
+$footerPadding: 10px;
 
-.wrapper{
+* {
+	margin: 0;
+}
+html, body{
     height: 100%;
-    overflow: scroll;
 }
-//For some odd reason last-child won't work...don't know why
-.row:nth-child(2n+1){
-    padding-bottom: $footerHeight;
+.wrapper {
+    height: 100%;
+    //margin-bottom: -110px;
+	margin-bottom:  -1 * ($footerHeight +  (2 * $footerPadding));
+ 
 }
-
+.wrapper:after {
+  content: "";
+  display: block;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
 footer{
-    height: $footerHeight;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+	height: $footerHeight; 
+    padding: $footerPadding;
     text-indent: 7%;
     width: 100%;
     text-align: left;
     color: #444;
-    background: rgba(200,200,200,.9);
-    
+    border: 2px solid blue;
 }

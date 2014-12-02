@@ -4,10 +4,7 @@
 
 /**********Nomralize**********/
 @import 'normalize';
-
-/**********Sticky Footer**********/
-@import 'sticky-footer';
-
+//*/
 /**********Variables**********/
 @import 'variables';
 
@@ -57,19 +54,11 @@ h1, h2{
     text-align: center;
 }
 .wrapper{
-    overflow: scroll;
+    position: relative;
     background-color: rgba(255,255,255,0.4);
     
 }
 
-
-
-.holder{
-    display: table-cell;
-    vertical-align: middle;
-    background: blue;
-    border: 2px solid blue;
-}
 
 $largeWidth: 960px;
 @media all and (min-width: $largeWidth){
@@ -163,3 +152,7 @@ $midWidth: 550px;
     clear: both;
   }
 }
+
+/**********Sticky Footer**********
+@import 'sticky-footer';
+//*/

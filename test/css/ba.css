@@ -1,0 +1,32 @@
+/* Mostly: http://ryanfait.com/sticky-footer/ 
+
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+	margin-bottom: -142px; 
+}
+
+footer, .wrapper:after {
+	height: 142px; 
+}
+footer {
+  background: orange;
+}
+//*/
+body{
+    position: relative;
+    height: 1000px;
+    border: 2px solid blue;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: orange;
+    width: 100%;
+    height: 110px;
+}
