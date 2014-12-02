@@ -302,7 +302,6 @@ div {
   border-radius: 0; }
 
 h1, h2 {
-  padding: 2rem;
   background: rgba(255, 255, 255, 0.6);
   text-align: center; }
 
@@ -313,13 +312,13 @@ h1, h2 {
 @media all and (min-width: 960px) {
   .wrapper {
     margin: 0 auto;
-    width: 960px; }
+    width: 940px; }
     .wrapper div {
       background: rgba(255, 255, 255, 0.6);
       text-align: center;
       float: left; }
     .wrapper h2, .wrapper h1 {
-      width: 880px;
+      width: 860px;
       padding: 20px;
       margin: 20px; }
     .wrapper h1 {
@@ -327,25 +326,25 @@ h1, h2 {
     .wrapper h2 {
       height: auto; }
     .wrapper .col-3 {
-      width: 240px;
+      width: 233.33333px;
       padding: 20px;
       margin: 20px;
       height: 380px; }
     .wrapper .col-4 {
-      width: 160px;
+      width: 155px;
       padding: 20px;
       margin: 20px;
       height: 290px; } }
 @media all and (min-width: 550px) and (max-width: 960px) {
   .wrapper {
     margin: 0 auto;
-    width: 550px; }
+    width: 530px; }
     .wrapper div {
       background: rgba(255, 255, 255, 0.6);
       text-align: center;
       float: left; }
     .wrapper h2, .wrapper h1 {
-      width: 470px;
+      width: 450px;
       padding: 20px;
       margin: 20px; }
     .wrapper h1 {
@@ -353,12 +352,12 @@ h1, h2 {
     .wrapper h2 {
       height: auto; }
     .wrapper .col-3 {
-      width: 470px;
+      width: 450px;
       padding: 20px;
       margin: 20px;
       height: auto; }
     .wrapper .col-4 {
-      width: 195px;
+      width: 185px;
       padding: 20px;
       margin: 20px;
       height: 240px; } }
@@ -372,11 +371,14 @@ h1, h2 {
       text-align: center;
       float: left; }
     .wrapper h2, .wrapper h1, .wrapper .col-4, .wrapper .col-3 {
-      width: 470px;
+      width: 450px;
       padding: 20px;
       margin: 20px;
       width: auto;
       height: auto; } }
+footer {
+  margin-top: 20px; }
+
 .clearfix {
   *zoom: 1; }
   .clearfix:before, .clearfix:after {
@@ -385,8 +387,33 @@ h1, h2 {
   .clearfix:after {
     clear: both; }
 
-/**********Sticky Footer**********
-@import 'sticky-footer';
-//*/
+head, link {
+  height: 0; }
+
+/**********Sticky Footer**********/
+* {
+  margin: 0; }
+
+html, body {
+  height: 100%; }
+
+.wrapper {
+  min-height: 100%;
+  padding-top: 1px;
+  margin-top: 20px; }
+
+.wrapper:after {
+  content: "";
+  display: block; }
+
+footer {
+  height: 120px; }
+
+footer {
+  text-align: center;
+  height: 100px;
+  padding: 10px;
+  color: #444;
+  background-color: #ddd; }
 
 /*# sourceMappingURL=main.css.map */

@@ -5,24 +5,22 @@ html, body {
   height: 100%; }
 
 .wrapper {
-  height: 100%;
-  margin-bottom: -120px; }
+  min-height: 100%;
+  padding-top: 1px;
+  margin-top: 20px; }
 
 .wrapper:after {
   content: "";
   display: block; }
 
-body {
-  height: 100%;
-  width: 100%; }
+footer {
+  height: 120px; }
 
 footer {
+  text-align: center;
   height: 100px;
   padding: 10px;
-  text-indent: 7%;
-  width: 100%;
-  text-align: left;
   color: #444;
-  border: 2px solid blue; }
+  background-color: #ddd; }
 
 /*# sourceMappingURL=sticky-footer.css.map */

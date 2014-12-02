@@ -20,8 +20,11 @@ footer {
 //*/
 body{
     position: relative;
-    height: 1000px;
+    height: 100%;
     border: 2px solid blue;
+}
+.wrapper{
+    height: 1000px;
 }
 footer{
     position: absolute;

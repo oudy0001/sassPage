@@ -1,32 +1,32 @@
 $footerHeight: 100px;
 $footerPadding: 10px;
 
+
 * {
 	margin: 0;
 }
-html, body{
-    height: 100%;
+html, body {
+	height: 100%;
 }
 .wrapper {
-    height: 100%;
-    //margin-bottom: -110px;
-	margin-bottom:  -1 * ($footerHeight +  (2 * $footerPadding));
- 
+  min-height: 100%;
+    padding-top: 1px;
+    margin-top: 20px;
+	//margin-bottom: -1 * ($footerHeight +  (2 * $footerPadding)); 
 }
 .wrapper:after {
   content: "";
   display: block;
 }
-body{
-    height: 100%;
-    width: 100%;
-}
 footer{
-	height: $footerHeight; 
-    padding: $footerPadding;
-    text-indent: 7%;
-    width: 100%;
-    text-align: left;
-    color: #444;
-    border: 2px solid blue;
+	height: $footerHeight + (2 * $footerPadding); 
 }
+footer {
+    
+    text-align: center;
+    	height: $footerHeight; 
+    padding: $footerPadding;
+  color: #444;
+    background-color: #ddd;
+}
+//*/

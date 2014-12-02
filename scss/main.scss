@@ -8,6 +8,7 @@
 /**********Variables**********/
 @import 'variables';
 
+
 /**********main**********/
 
 .iconic{
@@ -39,7 +40,7 @@ div{@include border-radius(0);}
 
 
 
-$containerWidth: 960px;
+$containerWidth: 940px;
 $colPadding: 20px;
 $colMargin: 20px;
 
@@ -49,7 +50,6 @@ h1 img{
 }
 
 h1, h2{
-    padding: 2rem;
     background: rgba(255,255,255,0.6);
     text-align: center;
 }
@@ -61,10 +61,10 @@ h1, h2{
 
 
 $largeWidth: 960px;
-@media all and (min-width: $largeWidth){
+@media all and (min-width: $containerWidth + 20px){
     .wrapper{
         margin: 0 auto;
-        width: $largeWidth;
+        width: $containerWidth;
         
     div{
         background: rgba(255,255,255,0.6);
@@ -91,8 +91,8 @@ $largeWidth: 960px;
 
 
 
-$midWidth: 550px;
-@media all and (min-width: $midWidth) and (max-width: $largeWidth){
+$midWidth: 530px;
+@media all and (min-width: $midWidth + 20px) and (max-width: $containerWidth + 20px){
     
     .wrapper{
         margin: 0 auto;
@@ -121,7 +121,7 @@ $midWidth: 550px;
     }
     
 }
-@media all and (max-width: $midWidth){
+@media all and (max-width: $midWidth + 20px){
     
     .wrapper{
         margin: 0 auto;
@@ -140,8 +140,9 @@ $midWidth: 550px;
         }
 }
 }
-
-
+footer{
+    margin-top: $colMargin;
+}
 .clearfix {
   *zoom: 1;
   &:before, &:after {
@@ -152,7 +153,11 @@ $midWidth: 550px;
     clear: both;
   }
 }
+head, link{
+    height: 0;
+}
 
-/**********Sticky Footer**********
+//*/
+/**********Sticky Footer**********/
 @import 'sticky-footer';
 //*/
